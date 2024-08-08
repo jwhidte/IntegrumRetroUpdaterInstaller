@@ -30,98 +30,187 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="AmericanLaserGames_Dir" Directory_Parent="profiles_Dir" DefaultDir="AMERIC~1|American Laser Games"/>
+    <ROW Directory="AtomiswaveLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="ATOMIS~1|Atomiswave Lightgun"/>
+    <ROW Directory="LargerImages_Dir" Directory_Parent="images_Dir" DefaultDir="LARGER~1|Larger Images"/>
+    <ROW Directory="LaunchboxDataFiles_Dir" Directory_Parent="profiles_Dir" DefaultDir="LAUNCH~1|Launchbox Data Files"/>
+    <ROW Directory="LaunchboxEmulators_Dir" Directory_Parent="profiles_Dir" DefaultDir="LAUNCH~2|Launchbox Emulators"/>
+    <ROW Directory="MAMELightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="MAMELI~1|MAME Lightgun"/>
+    <ROW Directory="MicrosoftXboxLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="MICROS~1|Microsoft Xbox Lightgun"/>
+    <ROW Directory="Namco357Lightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="NAMCO3~1|Namco 357 Lightgun"/>
+    <ROW Directory="NintendoEntertainmentSystemLigh_Dir" Directory_Parent="profiles_Dir" DefaultDir="NINTEN~1|Nintendo Entertainment System Lightgun"/>
+    <ROW Directory="NintendoWiiLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="NINTEN~2|Nintendo Wii Lightgun"/>
+    <ROW Directory="PCGamesLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="PCGAME~1|PC Games Lightgun"/>
+    <ROW Directory="SNESLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SNESLI~1|SNES Lightgun"/>
+    <ROW Directory="SegaCDLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGACD~1|Sega CD Lightgun"/>
+    <ROW Directory="SegaDreamcastLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGADR~1|Sega Dreamcast Lightgun"/>
+    <ROW Directory="SegaGenesisLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGAGE~1|Sega Genesis Lightgun"/>
+    <ROW Directory="SegaMasterSystemLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGAMA~1|Sega Master System Lightgun"/>
+    <ROW Directory="SegaModel2Lightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGAMO~1|Sega Model 2 Lightgun"/>
+    <ROW Directory="SegaModel3Lightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGAMO~2|Sega Model 3 Lightgun"/>
+    <ROW Directory="SegaNaomiLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SEGANA~1|Sega Naomi Lightgun"/>
+    <ROW Directory="SonyPlaystation2Lightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SONYPL~1|Sony Playstation 2 Lightgun"/>
+    <ROW Directory="SonyPlaystation3Lightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="SONYPL~2|Sony Playstation 3 Lightgun"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TeknoparrotLightgun_Dir" Directory_Parent="profiles_Dir" DefaultDir="TEKNOP~1|Teknoparrot Lightgun"/>
+    <ROW Directory="images_Dir" Directory_Parent="APPDIR" DefaultDir="images"/>
+    <ROW Directory="profiles_Dir" Directory_Parent="APPDIR" DefaultDir="profiles"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
     <ROW Component="APPDIR" Value="{2FEBB548-08D9-4B40-A602-157A49369C39}"/>
     <ROW Component="ProductInformation" Value="{87A0944E-E49F-4F9A-96E8-7E974E250E26}"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AMERICANLASERGAMES.png" ComponentId="{F53542BA-8F30-4C5E-B791-027F2672314E}" Directory_="LargerImages_Dir" Attributes="0" KeyPath="AMERICANLASERGAMES.png_2" Type="0"/>
     <ROW Component="APPDIR" ComponentId="{2FEBB548-08D9-4B40-A602-157A49369C39}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="IntegrumRetroUpdater.exe" ComponentId="{333A6D76-6AA7-4844-A11D-41AE944A5836}" Directory_="APPDIR" Attributes="256" KeyPath="IntegrumRetroUpdater.exe"/>
-    <ROW Component="IntegrumRetroUpdaterInstaller.exe" ComponentId="{E8A5BA6E-9FD5-4237-83A6-2B7A7EE761BB}" Directory_="APPDIR" Attributes="0" KeyPath="IntegrumRetroUpdaterInstaller.exe"/>
+    <ROW Component="ActionMaxLightgun.png" ComponentId="{66794BE1-BE10-4FE2-9034-BB4FCE5B4F68}" Directory_="images_Dir" Attributes="0" KeyPath="ActionMaxLightgun.png" Type="0"/>
+    <ROW Component="AmericanLaserGames.conf" ComponentId="{8F57AEF9-3FD9-4452-8418-C7497A84DDB3}" Directory_="AmericanLaserGames_Dir" Attributes="0" KeyPath="AmericanLaserGames.conf" Type="0"/>
+    <ROW Component="AtomiswaveLightgun.conf" ComponentId="{2ED9E03F-5D63-43EC-8752-89EC88A33BAD}" Directory_="AtomiswaveLightgun_Dir" Attributes="0" KeyPath="AtomiswaveLightgun.conf" Type="0"/>
+    <ROW Component="BangBangPewPew.conf" ComponentId="{5552588C-2ABA-45F3-A80C-64CF56973AED}" Directory_="PCGamesLightgun_Dir" Attributes="0" KeyPath="BangBangPewPew.conf" Type="0"/>
+    <ROW Component="CXBXLightgun.conf" ComponentId="{B193332C-FBC5-45E4-968A-A4E073FDAAAB}" Directory_="LaunchboxEmulators_Dir" Attributes="0" KeyPath="CXBXLightgun.conf" Type="0"/>
+    <ROW Component="IntegrumRetroUpdater.exe" ComponentId="{A9BDF31C-B086-47F5-959C-6295CF06D48D}" Directory_="APPDIR" Attributes="256" KeyPath="IntegrumRetroUpdater.exe"/>
+    <ROW Component="IntegrumRetroUpdaterInstaller.exe" ComponentId="{68F314EA-7A99-484F-AA30-365137B7D9EC}" Directory_="APPDIR" Attributes="0" KeyPath="IntegrumRetroUpdaterInstaller.exe"/>
+    <ROW Component="LaunchboxDataFiles.conf" ComponentId="{3CFD656D-02FA-482C-9A7A-4DB4CAE4FF39}" Directory_="LaunchboxDataFiles_Dir" Attributes="0" KeyPath="LaunchboxDataFiles.conf" Type="0"/>
+    <ROW Component="MAMELightgun.conf" ComponentId="{7DA161ED-4DAB-4434-93FD-F29CACD1FEA7}" Directory_="MAMELightgun_Dir" Attributes="0" KeyPath="MAMELightgun.conf_2" Type="0"/>
+    <ROW Component="MicrosoftXboxLightgun.conf" ComponentId="{3AFD0DAF-AE22-4352-9697-C5669423260D}" Directory_="MicrosoftXboxLightgun_Dir" Attributes="0" KeyPath="MicrosoftXboxLightgun.conf" Type="0"/>
+    <ROW Component="Namco357.conf" ComponentId="{E7370249-603F-488D-B93F-40663C568719}" Directory_="Namco357Lightgun_Dir" Attributes="0" KeyPath="Namco357.conf" Type="0"/>
+    <ROW Component="NintendoEntertainmentSystemLightgun.conf" ComponentId="{7A38F9F9-4158-42E1-AFEE-6AAA35FEC975}" Directory_="NintendoEntertainmentSystemLigh_Dir" Attributes="0" KeyPath="NintendoEntertainmentSystemLightgun.conf" Type="0"/>
+    <ROW Component="NintendoWiiLightgun.conf" ComponentId="{FF91B6F0-A675-4138-98C1-041238EAD5E9}" Directory_="NintendoWiiLightgun_Dir" Attributes="0" KeyPath="NintendoWiiLightgun.conf" Type="0"/>
     <ROW Component="ProductInformation" ComponentId="{87A0944E-E49F-4F9A-96E8-7E974E250E26}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="SDL2.dll" ComponentId="{30C4B0B3-070D-40C5-9A38-B25232FC5A96}" Directory_="APPDIR" Attributes="256" KeyPath="SDL2.dll"/>
-    <ROW Component="cacert.pem.txt" ComponentId="{3B681CAB-0C1F-4C4F-9339-9FE8A9FDC232}" Directory_="APPDIR" Attributes="0" KeyPath="cacert.pem.txt" Type="0"/>
-    <ROW Component="libLerc.dll" ComponentId="{5096C2A0-E0D4-45F4-80C1-4645C07D058C}" Directory_="APPDIR" Attributes="256" KeyPath="libLerc.dll"/>
-    <ROW Component="libbrotlicommon.dll" ComponentId="{7FCB4FFE-2FBF-4CEC-BF8F-DE179D692F2E}" Directory_="APPDIR" Attributes="256" KeyPath="libbrotlicommon.dll"/>
-    <ROW Component="libbrotlidec.dll" ComponentId="{FC579702-C788-47E9-848C-CA67379E5739}" Directory_="APPDIR" Attributes="256" KeyPath="libbrotlidec.dll"/>
-    <ROW Component="libbz21.dll" ComponentId="{FB5F2FDB-C577-483A-A443-E9A037D8E776}" Directory_="APPDIR" Attributes="256" KeyPath="libbz21.dll"/>
-    <ROW Component="libcairo2.dll" ComponentId="{9314BCDB-B9FE-4CD2-8209-F20F26481E05}" Directory_="APPDIR" Attributes="256" KeyPath="libcairo2.dll"/>
-    <ROW Component="libcairogobject2.dll" ComponentId="{560B5163-73A9-43C0-AC00-49F2C823B336}" Directory_="APPDIR" Attributes="256" KeyPath="libcairogobject2.dll"/>
-    <ROW Component="libcairomm1.161.dll" ComponentId="{2A6E46F3-11F2-4786-BD08-ABF4902DAAE3}" Directory_="APPDIR" Attributes="256" KeyPath="libcairomm1.161.dll"/>
-    <ROW Component="libcairoscriptinterpreter2.dll" ComponentId="{8BF66CF7-B1AE-471A-AB94-9B352C9F0C50}" Directory_="APPDIR" Attributes="256" KeyPath="libcairoscriptinterpreter2.dll"/>
-    <ROW Component="libcrypto3x64.dll" ComponentId="{FFF87CA6-C4CC-4DD7-998C-B4E8299D8694}" Directory_="APPDIR" Attributes="256" KeyPath="libcrypto3x64.dll"/>
-    <ROW Component="libcurl4.dll" ComponentId="{C89C6FBB-74B9-4054-856B-A0000A14CDAF}" Directory_="APPDIR" Attributes="256" KeyPath="libcurl4.dll"/>
-    <ROW Component="libdatrie1.dll" ComponentId="{1386DFBC-7C79-4524-9FA5-72BAF6AF9B75}" Directory_="APPDIR" Attributes="256" KeyPath="libdatrie1.dll"/>
-    <ROW Component="libdeflate.dll" ComponentId="{8E639206-701A-4DCC-8F3D-04498052E940}" Directory_="APPDIR" Attributes="256" KeyPath="libdeflate.dll"/>
-    <ROW Component="libepoxy0.dll" ComponentId="{4F21CCFA-5FE3-4AA9-9861-92F9C28BB77E}" Directory_="APPDIR" Attributes="256" KeyPath="libepoxy0.dll"/>
-    <ROW Component="libexpat1.dll" ComponentId="{FD7C5848-E32B-43AB-A461-2D91C8C36008}" Directory_="APPDIR" Attributes="256" KeyPath="libexpat1.dll"/>
-    <ROW Component="libffi8.dll" ComponentId="{846DF418-00BD-4C41-9D99-68DBCF64616E}" Directory_="APPDIR" Attributes="256" KeyPath="libffi8.dll"/>
-    <ROW Component="libfontconfig1.dll" ComponentId="{030E2790-3DA4-4305-B42F-C1B40D377B41}" Directory_="APPDIR" Attributes="256" KeyPath="libfontconfig1.dll"/>
-    <ROW Component="libfreetype6.dll" ComponentId="{904727ED-7B49-4F86-B2EC-2F46BDF2E5EF}" Directory_="APPDIR" Attributes="256" KeyPath="libfreetype6.dll"/>
-    <ROW Component="libfribidi0.dll" ComponentId="{13B7D00A-31BF-4401-BFF7-C2962BD66665}" Directory_="APPDIR" Attributes="256" KeyPath="libfribidi0.dll"/>
-    <ROW Component="libgcc_s_seh1.dll" ComponentId="{1C8DFE4D-8A90-44F1-BFFA-76CBB7F76626}" Directory_="APPDIR" Attributes="256" KeyPath="libgcc_s_seh1.dll"/>
-    <ROW Component="libgdk_pixbuf2.00.dll" ComponentId="{4F3B129F-EE7B-46C0-A2C5-2A305BE4E04A}" Directory_="APPDIR" Attributes="256" KeyPath="libgdk_pixbuf2.00.dll"/>
-    <ROW Component="libgio2.00.dll" ComponentId="{4E39EF4E-BD18-492F-A9D9-D91D86290257}" Directory_="APPDIR" Attributes="256" KeyPath="libgio2.00.dll"/>
-    <ROW Component="libgiomm2.681.dll" ComponentId="{40959171-DF7B-43D7-A5A3-8EFFD4FCE483}" Directory_="APPDIR" Attributes="256" KeyPath="libgiomm2.681.dll"/>
-    <ROW Component="libglib2.00.dll" ComponentId="{28F41891-DD5C-42FA-83DD-284718737367}" Directory_="APPDIR" Attributes="256" KeyPath="libglib2.00.dll"/>
-    <ROW Component="libglibmm2.681.dll" ComponentId="{1AA25EE8-645C-491A-83B3-AAF45B30B5F2}" Directory_="APPDIR" Attributes="256" KeyPath="libglibmm2.681.dll"/>
-    <ROW Component="libgmodule2.00.dll" ComponentId="{B9A75957-B3D0-4E8D-857A-1614E378CBD4}" Directory_="APPDIR" Attributes="256" KeyPath="libgmodule2.00.dll"/>
-    <ROW Component="libgobject2.00.dll" ComponentId="{D05DA7CA-96E6-4B52-B5B9-6071F2FEB93F}" Directory_="APPDIR" Attributes="256" KeyPath="libgobject2.00.dll"/>
-    <ROW Component="libgraphene1.00.dll" ComponentId="{BEC93919-C5DB-46FE-B302-596DDB56CD4C}" Directory_="APPDIR" Attributes="256" KeyPath="libgraphene1.00.dll"/>
-    <ROW Component="libgraphite2.dll" ComponentId="{E04F41E8-8682-4B83-A976-16A4EBCE6BF5}" Directory_="APPDIR" Attributes="256" KeyPath="libgraphite2.dll"/>
-    <ROW Component="libgtk41.dll" ComponentId="{E95CEF30-099F-4532-856F-93799117EA43}" Directory_="APPDIR" Attributes="256" KeyPath="libgtk41.dll"/>
-    <ROW Component="libgtkmm4.00.dll" ComponentId="{0AA88021-B0E1-4202-B039-8B906168C1B0}" Directory_="APPDIR" Attributes="256" KeyPath="libgtkmm4.00.dll"/>
-    <ROW Component="libharfbuzz0.dll" ComponentId="{D6911E5C-4522-4189-BDD7-86055D8AE0C8}" Directory_="APPDIR" Attributes="256" KeyPath="libharfbuzz0.dll"/>
-    <ROW Component="libiconv2.dll" ComponentId="{535C2B26-7145-4D57-BAA6-5AA7B8E45ABC}" Directory_="APPDIR" Attributes="256" KeyPath="libiconv2.dll"/>
-    <ROW Component="libidn20.dll" ComponentId="{491929A7-BE25-4542-B5B8-53F772F48BC1}" Directory_="APPDIR" Attributes="256" KeyPath="libidn20.dll"/>
-    <ROW Component="libintl8.dll" ComponentId="{B56C0723-F370-4E5F-A73D-866EE678E44B}" Directory_="APPDIR" Attributes="256" KeyPath="libintl8.dll"/>
-    <ROW Component="libjbig0.dll" ComponentId="{D6AFA541-89E6-488E-A71C-4D483E49A70C}" Directory_="APPDIR" Attributes="256" KeyPath="libjbig0.dll"/>
-    <ROW Component="libjpeg8.dll" ComponentId="{A73DE966-D539-4B96-9F36-209EFADBDD7E}" Directory_="APPDIR" Attributes="256" KeyPath="libjpeg8.dll"/>
-    <ROW Component="liblzma5.dll" ComponentId="{DA49D19B-294E-4CF3-B6F5-39BAB9373FC1}" Directory_="APPDIR" Attributes="256" KeyPath="liblzma5.dll"/>
-    <ROW Component="liblzo22.dll" ComponentId="{8BFB6187-E5F4-4C23-9EBA-7F09AA449CAB}" Directory_="APPDIR" Attributes="256" KeyPath="liblzo22.dll"/>
-    <ROW Component="libnghttp214.dll" ComponentId="{ECF0B2DB-33F4-4503-8CDB-3C37792CD4EB}" Directory_="APPDIR" Attributes="256" KeyPath="libnghttp214.dll"/>
-    <ROW Component="libpango1.00.dll" ComponentId="{00A2EF1D-64A4-4C08-800C-F09CD4461FD1}" Directory_="APPDIR" Attributes="256" KeyPath="libpango1.00.dll"/>
-    <ROW Component="libpangocairo1.00.dll" ComponentId="{4AAF9AC0-7301-4CA1-8FDE-F073DCAE22E2}" Directory_="APPDIR" Attributes="256" KeyPath="libpangocairo1.00.dll"/>
-    <ROW Component="libpangoft21.00.dll" ComponentId="{9FD0E215-D660-4C60-9ABC-94409092F54C}" Directory_="APPDIR" Attributes="256" KeyPath="libpangoft21.00.dll"/>
-    <ROW Component="libpangomm2.481.dll" ComponentId="{582F66EB-4590-4D24-88F3-7222AD959BAF}" Directory_="APPDIR" Attributes="256" KeyPath="libpangomm2.481.dll"/>
-    <ROW Component="libpangowin321.00.dll" ComponentId="{ABD19707-AE30-474F-82D1-3958F4224649}" Directory_="APPDIR" Attributes="256" KeyPath="libpangowin321.00.dll"/>
-    <ROW Component="libpcre280.dll" ComponentId="{A9BBE05C-B926-4CE6-A39B-F2939FD93044}" Directory_="APPDIR" Attributes="256" KeyPath="libpcre280.dll"/>
-    <ROW Component="libpixman10.dll" ComponentId="{75D576ED-6D1C-4DB8-857B-0F6F58A22DEA}" Directory_="APPDIR" Attributes="256" KeyPath="libpixman10.dll"/>
-    <ROW Component="libpng1616.dll" ComponentId="{FB56C646-341F-4C62-A36C-552B289B4CFD}" Directory_="APPDIR" Attributes="256" KeyPath="libpng1616.dll"/>
-    <ROW Component="libpsl5.dll" ComponentId="{20F9374A-F433-46EC-AA4E-42F2C1FEDAFB}" Directory_="APPDIR" Attributes="256" KeyPath="libpsl5.dll"/>
-    <ROW Component="libsharpyuv0.dll" ComponentId="{CFB23430-E0BC-4B51-9284-0D9D67EA7986}" Directory_="APPDIR" Attributes="256" KeyPath="libsharpyuv0.dll"/>
-    <ROW Component="libsigc3.00.dll" ComponentId="{5F7AD3CC-19DE-4D45-96B3-06DE4B567746}" Directory_="APPDIR" Attributes="256" KeyPath="libsigc3.00.dll"/>
-    <ROW Component="libssh21.dll" ComponentId="{BB948A4B-D171-45CA-9229-778343FE32EF}" Directory_="APPDIR" Attributes="256" KeyPath="libssh21.dll"/>
-    <ROW Component="libssl3x64.dll" ComponentId="{76B23FF6-413A-4ED4-B965-C44D1CB4D810}" Directory_="APPDIR" Attributes="256" KeyPath="libssl3x64.dll"/>
-    <ROW Component="libstdc6.dll" ComponentId="{8F4E28A4-3131-4808-BC67-B875AD7EBB79}" Directory_="APPDIR" Attributes="256" KeyPath="libstdc6.dll"/>
-    <ROW Component="libthai0.dll" ComponentId="{9FC5F18C-A7F0-4850-8544-32B00B5C2FFE}" Directory_="APPDIR" Attributes="256" KeyPath="libthai0.dll"/>
-    <ROW Component="libtiff6.dll" ComponentId="{249FAFD1-32CD-42E9-AF5B-F09A10A6A317}" Directory_="APPDIR" Attributes="256" KeyPath="libtiff6.dll"/>
-    <ROW Component="libunistring5.dll" ComponentId="{682733AF-E40E-422E-A839-0871C5E26682}" Directory_="APPDIR" Attributes="256" KeyPath="libunistring5.dll"/>
-    <ROW Component="libwebp7.dll" ComponentId="{E59F4515-4815-4AA9-B276-A279C68099D1}" Directory_="APPDIR" Attributes="256" KeyPath="libwebp7.dll"/>
-    <ROW Component="libwinpthread1.dll" ComponentId="{99A7EFD4-1D86-4918-A1D2-D5A5A11606E6}" Directory_="APPDIR" Attributes="256" KeyPath="libwinpthread1.dll"/>
-    <ROW Component="libzstd.dll" ComponentId="{16E2D8D6-AA61-420F-8170-072E0B710035}" Directory_="APPDIR" Attributes="256" KeyPath="libzstd.dll"/>
-    <ROW Component="rclone.exe" ComponentId="{79290734-9BB9-4AB7-A9CF-F89478F61BBC}" Directory_="APPDIR" Attributes="256" KeyPath="rclone.exe"/>
-    <ROW Component="zlib1.dll" ComponentId="{DF34A837-B993-4B7B-9798-4DFD1211AB09}" Directory_="APPDIR" Attributes="256" KeyPath="zlib1.dll"/>
+    <ROW Component="SDL2.dll" ComponentId="{058CECF2-2F9A-4757-A3B3-C99F34B8B19F}" Directory_="APPDIR" Attributes="256" KeyPath="SDL2.dll"/>
+    <ROW Component="SNESLightgun.conf" ComponentId="{51F94E61-1AC0-462B-8347-54549912D1F0}" Directory_="SNESLightgun_Dir" Attributes="0" KeyPath="SNESLightgun.conf" Type="0"/>
+    <ROW Component="SegaCDLightgun.conf" ComponentId="{DEC2C565-C223-48F1-869D-78A08C6B8D8F}" Directory_="SegaCDLightgun_Dir" Attributes="0" KeyPath="SegaCDLightgun.conf" Type="0"/>
+    <ROW Component="SegaDreamcastLightgun.conf" ComponentId="{77C32E79-4130-4180-9B4E-B3F2410CD6B9}" Directory_="SegaDreamcastLightgun_Dir" Attributes="0" KeyPath="SegaDreamcastLightgun.conf" Type="0"/>
+    <ROW Component="SegaGenesisLightgun.conf" ComponentId="{FA5C47F2-A4E1-410D-A2A5-46CDB56D057B}" Directory_="SegaGenesisLightgun_Dir" Attributes="0" KeyPath="SegaGenesisLightgun.conf" Type="0"/>
+    <ROW Component="SegaMasterSystemLightgun.conf" ComponentId="{5D0B55CE-65F3-4FB1-AEA3-7D24D0B03036}" Directory_="SegaMasterSystemLightgun_Dir" Attributes="0" KeyPath="SegaMasterSystemLightgun.conf" Type="0"/>
+    <ROW Component="SegaModel2Lightgun.conf" ComponentId="{1368171B-EA4B-441A-BFAD-3A2EB9551D5F}" Directory_="SegaModel2Lightgun_Dir" Attributes="0" KeyPath="SegaModel2Lightgun.conf_2" Type="0"/>
+    <ROW Component="SegaModel3Lightgun.conf" ComponentId="{72C005D1-E1F8-4428-B2AD-EAC2DF975524}" Directory_="SegaModel3Lightgun_Dir" Attributes="0" KeyPath="SegaModel3Lightgun.conf" Type="0"/>
+    <ROW Component="SegaNaomiLightgun.conf" ComponentId="{C461022D-5A9B-43C4-ACAA-8EC4664C47D0}" Directory_="SegaNaomiLightgun_Dir" Attributes="0" KeyPath="SegaNaomiLightgun.conf" Type="0"/>
+    <ROW Component="SonyPlaystation2Lightgun.conf" ComponentId="{BC4DEFBE-D619-4998-864F-3F51F87DAC85}" Directory_="SonyPlaystation2Lightgun_Dir" Attributes="0" KeyPath="SonyPlaystation2Lightgun.conf" Type="0"/>
+    <ROW Component="SonyPlaystation3Lightgun.conf" ComponentId="{8D9FFD4B-A701-4464-85C9-6D3708005939}" Directory_="SonyPlaystation3Lightgun_Dir" Attributes="0" KeyPath="SonyPlaystation3Lightgun.conf" Type="0"/>
+    <ROW Component="Spicy.conf" ComponentId="{FD202320-ADDE-4B95-8C3E-02F18B4319BB}" Directory_="TeknoparrotLightgun_Dir" Attributes="0" KeyPath="Spicy.conf" Type="0"/>
+    <ROW Component="cacert.pem.txt_1" ComponentId="{0A6C313C-09D1-4C89-984F-350EE67B2EAA}" Directory_="APPDIR" Attributes="0" KeyPath="cacert.pem.txt" Type="0"/>
+    <ROW Component="libLerc.dll" ComponentId="{BED8766C-45B0-46BF-9AC3-09C6002AD6ED}" Directory_="APPDIR" Attributes="256" KeyPath="libLerc.dll"/>
+    <ROW Component="libbrotlicommon.dll" ComponentId="{F02BFA09-39C9-4372-B56C-9EB23C1B58E1}" Directory_="APPDIR" Attributes="256" KeyPath="libbrotlicommon.dll"/>
+    <ROW Component="libbrotlidec.dll" ComponentId="{7F70FD87-7182-4AF3-A576-B2393B3AF81B}" Directory_="APPDIR" Attributes="256" KeyPath="libbrotlidec.dll"/>
+    <ROW Component="libbz21.dll" ComponentId="{5818685D-7300-422C-A06E-041318CFD846}" Directory_="APPDIR" Attributes="256" KeyPath="libbz21.dll"/>
+    <ROW Component="libcairo2.dll" ComponentId="{F6EFED17-814E-4B70-B5D0-04A5C927263C}" Directory_="APPDIR" Attributes="256" KeyPath="libcairo2.dll"/>
+    <ROW Component="libcairogobject2.dll" ComponentId="{86B94C6E-72D5-4EE5-90B0-6025A1234250}" Directory_="APPDIR" Attributes="256" KeyPath="libcairogobject2.dll"/>
+    <ROW Component="libcairomm1.161.dll" ComponentId="{AB791D17-7647-4DED-A6BE-56E0DC59186C}" Directory_="APPDIR" Attributes="256" KeyPath="libcairomm1.161.dll"/>
+    <ROW Component="libcairoscriptinterpreter2.dll" ComponentId="{6BB298CE-E20C-4CEB-9D2A-C5A503E13EAE}" Directory_="APPDIR" Attributes="256" KeyPath="libcairoscriptinterpreter2.dll"/>
+    <ROW Component="libcrypto3x64.dll" ComponentId="{348E2268-125F-47BA-8C8A-B2B225695124}" Directory_="APPDIR" Attributes="256" KeyPath="libcrypto3x64.dll"/>
+    <ROW Component="libcurl4.dll" ComponentId="{C918CF7E-085F-4B4C-BC92-43289F533633}" Directory_="APPDIR" Attributes="256" KeyPath="libcurl4.dll"/>
+    <ROW Component="libdatrie1.dll" ComponentId="{D55F61A4-A7F7-4549-9903-3806624EC43C}" Directory_="APPDIR" Attributes="256" KeyPath="libdatrie1.dll"/>
+    <ROW Component="libdeflate.dll" ComponentId="{F178C9B0-3692-4ED8-9499-B1880EF08552}" Directory_="APPDIR" Attributes="256" KeyPath="libdeflate.dll"/>
+    <ROW Component="libepoxy0.dll" ComponentId="{A2716492-D170-4A8D-A890-77C361D05D09}" Directory_="APPDIR" Attributes="256" KeyPath="libepoxy0.dll"/>
+    <ROW Component="libexpat1.dll" ComponentId="{E4A646E2-F960-49E7-B3DE-0249DD0FFEF7}" Directory_="APPDIR" Attributes="256" KeyPath="libexpat1.dll"/>
+    <ROW Component="libffi8.dll" ComponentId="{04AF10E4-B13B-4CE6-9E3D-FF7AC1495322}" Directory_="APPDIR" Attributes="256" KeyPath="libffi8.dll"/>
+    <ROW Component="libfontconfig1.dll" ComponentId="{06798C92-156A-4372-A3CF-12EEEC848FE3}" Directory_="APPDIR" Attributes="256" KeyPath="libfontconfig1.dll"/>
+    <ROW Component="libfreetype6.dll" ComponentId="{F7412A25-FBD8-4B87-98B9-D6E3C9A8D95C}" Directory_="APPDIR" Attributes="256" KeyPath="libfreetype6.dll"/>
+    <ROW Component="libfribidi0.dll" ComponentId="{A8C26646-8B1A-4811-A069-37AC553071A0}" Directory_="APPDIR" Attributes="256" KeyPath="libfribidi0.dll"/>
+    <ROW Component="libgcc_s_seh1.dll" ComponentId="{2046A269-DF5A-4A79-8C32-640DA846D751}" Directory_="APPDIR" Attributes="256" KeyPath="libgcc_s_seh1.dll"/>
+    <ROW Component="libgdk_pixbuf2.00.dll" ComponentId="{521F12D1-04E1-4C4C-BD18-ACFD17BDD200}" Directory_="APPDIR" Attributes="256" KeyPath="libgdk_pixbuf2.00.dll"/>
+    <ROW Component="libgio2.00.dll" ComponentId="{A4130C30-4616-4E36-91F7-7A507DCC5D39}" Directory_="APPDIR" Attributes="256" KeyPath="libgio2.00.dll"/>
+    <ROW Component="libgiomm2.681.dll" ComponentId="{31B49451-5159-424B-B16F-29EC4CEF08DE}" Directory_="APPDIR" Attributes="256" KeyPath="libgiomm2.681.dll"/>
+    <ROW Component="libglib2.00.dll" ComponentId="{9E413CDB-218E-49A2-BB11-045B3B28DA0A}" Directory_="APPDIR" Attributes="256" KeyPath="libglib2.00.dll"/>
+    <ROW Component="libglibmm2.681.dll" ComponentId="{4E63D7FA-160D-47B2-B683-FA20F8C3D435}" Directory_="APPDIR" Attributes="256" KeyPath="libglibmm2.681.dll"/>
+    <ROW Component="libgmodule2.00.dll" ComponentId="{F67349E4-85F3-4EE5-867E-A18CB1E75A94}" Directory_="APPDIR" Attributes="256" KeyPath="libgmodule2.00.dll"/>
+    <ROW Component="libgobject2.00.dll" ComponentId="{C130A86C-3874-48B4-A295-6A0F96DA7875}" Directory_="APPDIR" Attributes="256" KeyPath="libgobject2.00.dll"/>
+    <ROW Component="libgraphene1.00.dll" ComponentId="{26F69808-3726-4DF3-A6BD-71159C65C32E}" Directory_="APPDIR" Attributes="256" KeyPath="libgraphene1.00.dll"/>
+    <ROW Component="libgraphite2.dll" ComponentId="{5DA58B05-AB03-4945-B98A-CFD225BD5A5A}" Directory_="APPDIR" Attributes="256" KeyPath="libgraphite2.dll"/>
+    <ROW Component="libgtk41.dll" ComponentId="{036CD4B6-2B0D-49E9-B6A2-B24D00E1822C}" Directory_="APPDIR" Attributes="256" KeyPath="libgtk41.dll"/>
+    <ROW Component="libgtkmm4.00.dll" ComponentId="{521CFD7F-B47C-45C9-A71C-7670FFD884E9}" Directory_="APPDIR" Attributes="256" KeyPath="libgtkmm4.00.dll"/>
+    <ROW Component="libharfbuzz0.dll" ComponentId="{834601C0-ECA7-4B18-A66A-2B96C700D5C8}" Directory_="APPDIR" Attributes="256" KeyPath="libharfbuzz0.dll"/>
+    <ROW Component="libiconv2.dll" ComponentId="{ABC2879A-EFEB-4773-BF7C-51F3AF8AE1A8}" Directory_="APPDIR" Attributes="256" KeyPath="libiconv2.dll"/>
+    <ROW Component="libidn20.dll" ComponentId="{3F5049CA-3267-4D30-A6BF-8B5966D72ED0}" Directory_="APPDIR" Attributes="256" KeyPath="libidn20.dll"/>
+    <ROW Component="libintl8.dll" ComponentId="{63D1E50D-EEFD-4FCE-81DD-6A292A699140}" Directory_="APPDIR" Attributes="256" KeyPath="libintl8.dll"/>
+    <ROW Component="libjbig0.dll" ComponentId="{20004C2F-DE5A-478D-ABE9-BF9BA32F5E35}" Directory_="APPDIR" Attributes="256" KeyPath="libjbig0.dll"/>
+    <ROW Component="libjpeg8.dll" ComponentId="{8E4C0AE3-0608-4A61-81B9-7318486048EA}" Directory_="APPDIR" Attributes="256" KeyPath="libjpeg8.dll"/>
+    <ROW Component="liblzma5.dll" ComponentId="{CFBAE785-8B19-4F40-9A7E-80E0C46850E0}" Directory_="APPDIR" Attributes="256" KeyPath="liblzma5.dll"/>
+    <ROW Component="liblzo22.dll" ComponentId="{DC4860C1-0B7A-467A-9BCB-6A9A90FB3A27}" Directory_="APPDIR" Attributes="256" KeyPath="liblzo22.dll"/>
+    <ROW Component="libnghttp214.dll" ComponentId="{85CF089E-8F0D-467C-8116-E6EDB7240EA8}" Directory_="APPDIR" Attributes="256" KeyPath="libnghttp214.dll"/>
+    <ROW Component="libpango1.00.dll" ComponentId="{C8ECB6D5-E299-43E3-8DD5-2676F0CE440E}" Directory_="APPDIR" Attributes="256" KeyPath="libpango1.00.dll"/>
+    <ROW Component="libpangocairo1.00.dll" ComponentId="{9866C325-83AD-4912-A6C4-3DA2F71F39C7}" Directory_="APPDIR" Attributes="256" KeyPath="libpangocairo1.00.dll"/>
+    <ROW Component="libpangoft21.00.dll" ComponentId="{78D1C459-AF7E-487E-8D10-81FC2E6920E0}" Directory_="APPDIR" Attributes="256" KeyPath="libpangoft21.00.dll"/>
+    <ROW Component="libpangomm2.481.dll" ComponentId="{381D4A67-ADB6-451E-B4F5-C4403E67B841}" Directory_="APPDIR" Attributes="256" KeyPath="libpangomm2.481.dll"/>
+    <ROW Component="libpangowin321.00.dll" ComponentId="{5B6C3C41-BB9F-41C3-814B-23B7EF8BA468}" Directory_="APPDIR" Attributes="256" KeyPath="libpangowin321.00.dll"/>
+    <ROW Component="libpcre280.dll" ComponentId="{F99ABC55-1E55-4BD7-8178-DCE8E276B2DA}" Directory_="APPDIR" Attributes="256" KeyPath="libpcre280.dll"/>
+    <ROW Component="libpixman10.dll" ComponentId="{611AB798-31FE-437E-BD39-20773C10D105}" Directory_="APPDIR" Attributes="256" KeyPath="libpixman10.dll"/>
+    <ROW Component="libpng1616.dll" ComponentId="{5C43CF8C-D5F0-4878-B202-E8B3AB10F1B7}" Directory_="APPDIR" Attributes="256" KeyPath="libpng1616.dll"/>
+    <ROW Component="libpsl5.dll" ComponentId="{1FBC0BE1-03A3-4FD4-9098-A15D75707C4E}" Directory_="APPDIR" Attributes="256" KeyPath="libpsl5.dll"/>
+    <ROW Component="libsharpyuv0.dll" ComponentId="{80785EF7-D567-4628-8048-3C7784C22122}" Directory_="APPDIR" Attributes="256" KeyPath="libsharpyuv0.dll"/>
+    <ROW Component="libsigc3.00.dll" ComponentId="{B0CDA70E-E83B-4F97-9E33-0CF493B8933B}" Directory_="APPDIR" Attributes="256" KeyPath="libsigc3.00.dll"/>
+    <ROW Component="libssh21.dll" ComponentId="{2B5550AF-8279-4756-B2F2-65BF165805EF}" Directory_="APPDIR" Attributes="256" KeyPath="libssh21.dll"/>
+    <ROW Component="libssl3x64.dll" ComponentId="{E890F7A4-B2AC-458F-BEE9-BF77A84E8DD1}" Directory_="APPDIR" Attributes="256" KeyPath="libssl3x64.dll"/>
+    <ROW Component="libstdc6.dll" ComponentId="{BCAC6E02-9D47-4C3E-97BB-0E89A257D9E1}" Directory_="APPDIR" Attributes="256" KeyPath="libstdc6.dll"/>
+    <ROW Component="libthai0.dll" ComponentId="{958E0DAA-71A1-42A4-8DDE-741F858564ED}" Directory_="APPDIR" Attributes="256" KeyPath="libthai0.dll"/>
+    <ROW Component="libtiff6.dll" ComponentId="{58967B81-3D53-4010-A4BC-429453E611A3}" Directory_="APPDIR" Attributes="256" KeyPath="libtiff6.dll"/>
+    <ROW Component="libunistring5.dll" ComponentId="{84189887-C9C6-4F49-AB1C-FA948D9A9C6D}" Directory_="APPDIR" Attributes="256" KeyPath="libunistring5.dll"/>
+    <ROW Component="libwebp7.dll" ComponentId="{DCC0A3F5-2EDC-45C6-BAB4-6DE6895E8399}" Directory_="APPDIR" Attributes="256" KeyPath="libwebp7.dll"/>
+    <ROW Component="libwinpthread1.dll" ComponentId="{7E4D40D4-F051-4E8B-854F-D1F5BE5F5213}" Directory_="APPDIR" Attributes="256" KeyPath="libwinpthread1.dll"/>
+    <ROW Component="libzstd.dll" ComponentId="{334E7594-90E0-43FC-9ADB-8012EEE43EF5}" Directory_="APPDIR" Attributes="256" KeyPath="libzstd.dll"/>
+    <ROW Component="rclone.exe" ComponentId="{3A834608-0ABB-4F51-B4EE-CA01D8256C8E}" Directory_="APPDIR" Attributes="256" KeyPath="rclone.exe"/>
+    <ROW Component="zlib1.dll" ComponentId="{1BB7EC72-CA75-437B-9428-22E59B8C4A6E}" Directory_="APPDIR" Attributes="256" KeyPath="zlib1.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="cacert.pem.txt" Component_="cacert.pem.txt" FileName="CACERT~1.TXT|cacert.pem.txt" Attributes="0" SourcePath="..\Menu\bin\cacert.pem.txt" SelfReg="false"/>
-    <ROW File="config.ini" Component_="cacert.pem.txt" FileName="config.ini" Attributes="0" SourcePath="..\Menu\bin\config.ini" SelfReg="false"/>
+    <ROW File="cacert.pem.txt" Component_="cacert.pem.txt_1" FileName="CACERT~1.TXT|cacert.pem.txt" Attributes="0" SourcePath="..\Menu\bin\cacert.pem.txt" SelfReg="false"/>
+    <ROW File="config.ini" Component_="cacert.pem.txt_1" FileName="config.ini" Attributes="0" SourcePath="..\Menu\bin\config.ini" SelfReg="false"/>
+    <ROW File="ActionMaxLightgun.png" Component_="ActionMaxLightgun.png" FileName="ACTION~1.PNG|Action Max Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Action Max Lightgun.png" SelfReg="false"/>
+    <ROW File="AmericanLaserGames.png" Component_="ActionMaxLightgun.png" FileName="AMERIC~1.PNG|American Laser Games.png" Attributes="0" SourcePath="..\Menu\bin\images\American Laser Games.png" SelfReg="false"/>
+    <ROW File="AtomiswaveLightgun.png" Component_="ActionMaxLightgun.png" FileName="ATOMIS~1.PNG|Atomiswave Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Atomiswave Lightgun.png" SelfReg="false"/>
+    <ROW File="Background.jpg" Component_="ActionMaxLightgun.png" FileName="BACKGR~1.JPG|Background.jpg" Attributes="0" SourcePath="..\Menu\bin\images\Background.jpg" SelfReg="false"/>
+    <ROW File="Background.png" Component_="ActionMaxLightgun.png" FileName="BACKGR~1.PNG|Background.png" Attributes="0" SourcePath="..\Menu\bin\images\Background.png" SelfReg="false"/>
+    <ROW File="Background1.png" Component_="ActionMaxLightgun.png" FileName="BACKGR~2.PNG|Background1.png" Attributes="0" SourcePath="..\Menu\bin\images\Background1.png" SelfReg="false"/>
+    <ROW File="Background2.png" Component_="ActionMaxLightgun.png" FileName="BACKGR~3.PNG|Background2.png" Attributes="0" SourcePath="..\Menu\bin\images\Background2.png" SelfReg="false"/>
+    <ROW File="ExtremeHunting.png" Component_="ActionMaxLightgun.png" FileName="EXTREM~1.PNG|Extreme Hunting.png" Attributes="0" SourcePath="..\Menu\bin\images\Extreme Hunting.png" SelfReg="false"/>
+    <ROW File="AMERICANLASERGAMES.png_2" Component_="AMERICANLASERGAMES.png" FileName="AMERIC~1.PNG|AMERICAN LASER GAMES.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\AMERICAN LASER GAMES.png" SelfReg="false"/>
+    <ROW File="ATOMISWAVECopy.png" Component_="AMERICANLASERGAMES.png" FileName="ATOMIS~1.PNG|ATOMISWAVE - Copy.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\ATOMISWAVE - Copy.png" SelfReg="false"/>
+    <ROW File="MAMECopy.png" Component_="AMERICANLASERGAMES.png" FileName="MAME-C~1.PNG|MAME - Copy.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\MAME - Copy.png" SelfReg="false"/>
+    <ROW File="NES.png" Component_="AMERICANLASERGAMES.png" FileName="NES.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\NES.png" SelfReg="false"/>
+    <ROW File="NINTENDOWII.png" Component_="AMERICANLASERGAMES.png" FileName="NINTEN~1.PNG|NINTENDO WII.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\NINTENDO WII.png" SelfReg="false"/>
+    <ROW File="SEGACD.png" Component_="AMERICANLASERGAMES.png" FileName="SEGACD~1.PNG|SEGA CD.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\SEGA CD.png" SelfReg="false"/>
+    <ROW File="SEGADREAMCAST.png" Component_="AMERICANLASERGAMES.png" FileName="SEGADR~1.PNG|SEGA DREAMCAST.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\SEGA DREAMCAST.png" SelfReg="false"/>
+    <ROW File="SEGAGENESIS.png" Component_="AMERICANLASERGAMES.png" FileName="SEGAGE~1.PNG|SEGA GENESIS.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\SEGA GENESIS.png" SelfReg="false"/>
+    <ROW File="TEKNOPARROTCopy.png" Component_="AMERICANLASERGAMES.png" FileName="TEKNOP~1.PNG|TEKNOPARROT - Copy.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\TEKNOPARROT - Copy.png" SelfReg="false"/>
+    <ROW File="XBOXCopy.png" Component_="AMERICANLASERGAMES.png" FileName="XBOX-C~1.PNG|XBOX - Copy.png" Attributes="0" SourcePath="..\Menu\bin\images\Larger Images\XBOX - Copy.png" SelfReg="false"/>
+    <ROW File="MAMELightgun.png" Component_="ActionMaxLightgun.png" FileName="MAMELI~1.PNG|MAME Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\MAME Lightgun.png" SelfReg="false"/>
+    <ROW File="MicrosoftXboxLightgun.png" Component_="ActionMaxLightgun.png" FileName="MICROS~1.PNG|Microsoft Xbox Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Microsoft Xbox Lightgun.png" SelfReg="false"/>
+    <ROW File="NintendoEntertainmentSystemLightgun.png" Component_="ActionMaxLightgun.png" FileName="NINTEN~1.PNG|Nintendo Entertainment System Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Nintendo Entertainment System Lightgun.png" SelfReg="false"/>
+    <ROW File="NintendoWiiLightgun.png" Component_="ActionMaxLightgun.png" FileName="NINTEN~2.PNG|Nintendo Wii Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Nintendo Wii Lightgun.png" SelfReg="false"/>
+    <ROW File="PCGamesLightgun.png" Component_="ActionMaxLightgun.png" FileName="PCGAME~1.PNG|PC Games Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\PC Games Lightgun.png" SelfReg="false"/>
+    <ROW File="RangerMission.png" Component_="ActionMaxLightgun.png" FileName="RANGER~1.PNG|Ranger Mission.png" Attributes="0" SourcePath="..\Menu\bin\images\Ranger Mission.png" SelfReg="false"/>
+    <ROW File="sections.png" Component_="ActionMaxLightgun.png" FileName="sections.png" Attributes="0" SourcePath="..\Menu\bin\images\sections.png" SelfReg="false"/>
+    <ROW File="SegaCDLightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGACD~1.PNG|Sega CD Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega CD Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaClayChallenge.png" Component_="ActionMaxLightgun.png" FileName="SEGACL~1.PNG|Sega Clay Challenge.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Clay Challenge.png" SelfReg="false"/>
+    <ROW File="SegaDreamcastLightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGADR~1.PNG|Sega Dreamcast Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Dreamcast Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaGenesisLightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGAGE~1.PNG|Sega Genesis Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Genesis Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaMasterSystemLightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGAMA~1.PNG|Sega Master System Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Master System Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaModel2Lightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGAMO~1.PNG|Sega Model 2 Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Model 2 Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaModel3Lightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGAMO~2.PNG|Sega Model 3 Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Model 3 Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaNaomiLightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGANA~1.PNG|Sega Naomi Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Naomi Lightgun.png" SelfReg="false"/>
+    <ROW File="SegaSaturnLightgun.png" Component_="ActionMaxLightgun.png" FileName="SEGASA~1.PNG|Sega Saturn Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sega Saturn Lightgun.png" SelfReg="false"/>
+    <ROW File="SNESLightgun.png" Component_="ActionMaxLightgun.png" FileName="SNESLI~1.PNG|SNES Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\SNES Lightgun.png" SelfReg="false"/>
+    <ROW File="SonyPlaystation2Lightgun.png" Component_="ActionMaxLightgun.png" FileName="SONYPL~1.PNG|Sony Playstation 2 Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sony Playstation 2 Lightgun.png" SelfReg="false"/>
+    <ROW File="SonyPlaystation3Lightgun.png" Component_="ActionMaxLightgun.png" FileName="SONYPL~2.PNG|Sony Playstation 3 Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sony Playstation 3 Lightgun.png" SelfReg="false"/>
+    <ROW File="SonyPlaystationLightgun.png" Component_="ActionMaxLightgun.png" FileName="SONYPL~3.PNG|Sony Playstation Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Sony Playstation Lightgun.png" SelfReg="false"/>
+    <ROW File="SportsShootingUSA.png" Component_="ActionMaxLightgun.png" FileName="SPORTS~1.PNG|Sports Shooting USA.png" Attributes="0" SourcePath="..\Menu\bin\images\Sports Shooting USA.png" SelfReg="false"/>
+    <ROW File="STEAM.png" Component_="ActionMaxLightgun.png" FileName="STEAM.png" Attributes="0" SourcePath="..\Menu\bin\images\STEAM.png" SelfReg="false"/>
+    <ROW File="TeknoparrotLightgun.png" Component_="ActionMaxLightgun.png" FileName="TEKNOP~1.PNG|Teknoparrot Lightgun.png" Attributes="0" SourcePath="..\Menu\bin\images\Teknoparrot Lightgun.png" SelfReg="false"/>
+    <ROW File="Update.png" Component_="ActionMaxLightgun.png" FileName="Update.png" Attributes="0" SourcePath="..\Menu\bin\images\Update.png" SelfReg="false"/>
     <ROW File="IntegrumRetroUpdater.exe" Component_="IntegrumRetroUpdater.exe" FileName="INTEGR~1.EXE|IntegrumRetroUpdater.exe" Attributes="0" SourcePath="..\Menu\bin\IntegrumRetroUpdater.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="IntegrumRetroUpdater.log" Component_="cacert.pem.txt" FileName="INTEGR~1.LOG|IntegrumRetroUpdater.log" Attributes="0" SourcePath="..\Menu\bin\IntegrumRetroUpdater.log" SelfReg="false"/>
+    <ROW File="IntegrumRetroUpdater.log" Component_="cacert.pem.txt_1" FileName="INTEGR~1.LOG|IntegrumRetroUpdater.log" Attributes="0" SourcePath="..\Menu\bin\IntegrumRetroUpdater.log" SelfReg="false"/>
     <ROW File="IntegrumRetroUpdaterInstaller.exe" Component_="IntegrumRetroUpdaterInstaller.exe" FileName="INTEGR~2.EXE|IntegrumRetroUpdaterInstaller.exe" Attributes="0" SourcePath="..\Menu\bin\IntegrumRetroUpdaterInstaller.exe" SelfReg="false" DigSign="true"/>
     <ROW File="libbrotlicommon.dll" Component_="libbrotlicommon.dll" FileName="LIBBRO~1.DLL|libbrotlicommon.dll" Attributes="0" SourcePath="..\Menu\bin\libbrotlicommon.dll" SelfReg="false"/>
     <ROW File="libbrotlidec.dll" Component_="libbrotlidec.dll" FileName="LIBBRO~2.DLL|libbrotlidec.dll" Attributes="0" SourcePath="..\Menu\bin\libbrotlidec.dll" SelfReg="false"/>
     <ROW File="libbz21.dll" Component_="libbz21.dll" FileName="libbz2-1.dll" Attributes="0" SourcePath="..\Menu\bin\libbz2-1.dll" SelfReg="false"/>
     <ROW File="libcairo2.dll" Component_="libcairo2.dll" FileName="LIBCAI~1.DLL|libcairo-2.dll" Attributes="0" SourcePath="..\Menu\bin\libcairo-2.dll" SelfReg="false"/>
     <ROW File="libcairogobject2.dll" Component_="libcairogobject2.dll" FileName="LIBCAI~2.DLL|libcairo-gobject-2.dll" Attributes="0" SourcePath="..\Menu\bin\libcairo-gobject-2.dll" SelfReg="false"/>
-    <ROW File="libcairomm1.161.dll" Component_="libcairomm1.161.dll" FileName="LIBCAI~3.DLL|libcairomm-1.16-1.dll" Attributes="0" SourcePath="..\Menu\bin\libcairomm-1.16-1.dll" SelfReg="false"/>
     <ROW File="libcairoscriptinterpreter2.dll" Component_="libcairoscriptinterpreter2.dll" FileName="LIBCAI~4.DLL|libcairo-script-interpreter-2.dll" Attributes="0" SourcePath="..\Menu\bin\libcairo-script-interpreter-2.dll" SelfReg="false"/>
+    <ROW File="libcairomm1.161.dll" Component_="libcairomm1.161.dll" FileName="LIBCAI~3.DLL|libcairomm-1.16-1.dll" Attributes="0" SourcePath="..\Menu\bin\libcairomm-1.16-1.dll" SelfReg="false"/>
     <ROW File="libcrypto3x64.dll" Component_="libcrypto3x64.dll" FileName="LIBCRY~1.DLL|libcrypto-3-x64.dll" Attributes="0" SourcePath="..\Menu\bin\libcrypto-3-x64.dll" SelfReg="false"/>
     <ROW File="libcurl4.dll" Component_="libcurl4.dll" FileName="LIBCUR~1.DLL|libcurl-4.dll" Attributes="0" SourcePath="..\Menu\bin\libcurl-4.dll" SelfReg="false"/>
     <ROW File="libdatrie1.dll" Component_="libdatrie1.dll" FileName="LIBDAT~1.DLL|libdatrie-1.dll" Attributes="0" SourcePath="..\Menu\bin\libdatrie-1.dll" SelfReg="false"/>
@@ -174,10 +263,116 @@
     <ROW File="libwebp7.dll" Component_="libwebp7.dll" FileName="LIBWEB~1.DLL|libwebp-7.dll" Attributes="0" SourcePath="..\Menu\bin\libwebp-7.dll" SelfReg="false"/>
     <ROW File="libwinpthread1.dll" Component_="libwinpthread1.dll" FileName="LIBWIN~1.DLL|libwinpthread-1.dll" Attributes="0" SourcePath="..\Menu\bin\libwinpthread-1.dll" SelfReg="false"/>
     <ROW File="libzstd.dll" Component_="libzstd.dll" FileName="libzstd.dll" Attributes="0" SourcePath="..\Menu\bin\libzstd.dll" SelfReg="false"/>
-    <ROW File="lightgun.conf" Component_="cacert.pem.txt" FileName="LIGHTG~1.CON|lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\lightgun.conf" SelfReg="false"/>
+    <ROW File="lightgun.conf" Component_="cacert.pem.txt_1" FileName="LIGHTG~1.CON|lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\lightgun.conf" SelfReg="false"/>
+    <ROW File="newversion.ini" Component_="cacert.pem.txt_1" FileName="NEWVER~1.INI|newversion.ini" Attributes="0" SourcePath="..\Menu\bin\newversion.ini" SelfReg="false"/>
+    <ROW File="AmericanLaserGames.conf" Component_="AmericanLaserGames.conf" FileName="AMERIC~1.CON|American Laser Games.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\American Laser Games\American Laser Games.conf" SelfReg="false"/>
+    <ROW File="AtomiswaveLightgun.conf" Component_="AtomiswaveLightgun.conf" FileName="ATOMIS~1.CON|Atomiswave Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Atomiswave Lightgun\Atomiswave Lightgun.conf" SelfReg="false"/>
+    <ROW File="LaunchboxDataFiles.conf" Component_="LaunchboxDataFiles.conf" FileName="LAUNCH~1.CON|Launchbox Data Files.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Data Files\Launchbox Data Files.conf" SelfReg="false"/>
+    <ROW File="CXBXLightgun.conf" Component_="CXBXLightgun.conf" FileName="CXBXLI~1.CON|CXBX Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\CXBX Lightgun.conf" SelfReg="false"/>
+    <ROW File="Demulshooter.conf" Component_="CXBXLightgun.conf" FileName="DEMULS~1.CON|Demulshooter.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Demulshooter.conf" SelfReg="false"/>
+    <ROW File="FlycastLightgun.conf" Component_="CXBXLightgun.conf" FileName="FLYCAS~1.CON|Flycast Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Flycast Lightgun.conf" SelfReg="false"/>
+    <ROW File="MAMELightgun.conf" Component_="CXBXLightgun.conf" FileName="MAMELI~1.CON|MAME Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\MAME Lightgun.conf" SelfReg="false"/>
+    <ROW File="PCSX2Lightgun.conf" Component_="CXBXLightgun.conf" FileName="PCSX2L~1.CON|PCSX2 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\PCSX2 Lightgun.conf" SelfReg="false"/>
+    <ROW File="RetroarchLightgun.conf" Component_="CXBXLightgun.conf" FileName="RETROA~1.CON|Retroarch Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Retroarch Lightgun.conf" SelfReg="false"/>
+    <ROW File="RPCS3Lightgun.conf" Component_="CXBXLightgun.conf" FileName="RPCS3L~1.CON|RPCS3 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\RPCS3 Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaModel2Lightgun.conf" Component_="CXBXLightgun.conf" FileName="SEGAMO~1.CON|Sega Model 2 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Sega Model 2 Lightgun.conf" SelfReg="false"/>
+    <ROW File="Singe2.conf" Component_="CXBXLightgun.conf" FileName="SINGE2~1.CON|Singe2.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Singe2.conf" SelfReg="false"/>
+    <ROW File="Supermodel.conf" Component_="CXBXLightgun.conf" FileName="SUPERM~1.CON|Supermodel.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Supermodel.conf" SelfReg="false"/>
+    <ROW File="TeknoparrotLightgun.conf" Component_="CXBXLightgun.conf" FileName="TEKNOP~1.CON|Teknoparrot Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Launchbox Emulators\Teknoparrot Lightgun.conf" SelfReg="false"/>
+    <ROW File="MAMELightgun.conf_2" Component_="MAMELightgun.conf" FileName="MAMELI~1.CON|MAME Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\MAME Lightgun\MAME Lightgun.conf" SelfReg="false"/>
+    <ROW File="MicrosoftXboxLightgun.conf" Component_="MicrosoftXboxLightgun.conf" FileName="MICROS~1.CON|Microsoft Xbox Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Microsoft Xbox Lightgun\Microsoft Xbox Lightgun.conf" SelfReg="false"/>
+    <ROW File="Namco357.conf" Component_="Namco357.conf" FileName="NAMCO3~1.CON|Namco 357.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Namco 357 Lightgun\Namco 357.conf" SelfReg="false"/>
+    <ROW File="NintendoEntertainmentSystemLightgun.conf" Component_="NintendoEntertainmentSystemLightgun.conf" FileName="NINTEN~1.CON|Nintendo Entertainment System Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Nintendo Entertainment System Lightgun\Nintendo Entertainment System Lightgun.conf" SelfReg="false"/>
+    <ROW File="NintendoWiiLightgun.conf" Component_="NintendoWiiLightgun.conf" FileName="NINTEN~1.CON|Nintendo Wii Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Nintendo Wii Lightgun\Nintendo Wii Lightgun.conf" SelfReg="false"/>
+    <ROW File="BangBangPewPew.conf" Component_="BangBangPewPew.conf" FileName="BANGBA~1.CON|BangBang PewPew.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\BangBang PewPew.conf" SelfReg="false"/>
+    <ROW File="BanzaiEscape2.conf" Component_="BangBangPewPew.conf" FileName="BANZAI~1.CON|Banzai Escape 2.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Banzai Escape 2.conf" SelfReg="false"/>
+    <ROW File="BanzaiEscape.conf" Component_="BangBangPewPew.conf" FileName="BANZAI~2.CON|Banzai Escape.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Banzai Escape.conf" SelfReg="false"/>
+    <ROW File="BigBuckHunterArcade.conf" Component_="BangBangPewPew.conf" FileName="BIGBUC~1.CON|Big Buck Hunter Arcade.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Big Buck Hunter Arcade.conf" SelfReg="false"/>
+    <ROW File="BlamconShootingGallery.conf" Component_="BangBangPewPew.conf" FileName="BLAMCO~1.CON|Blamcon Shooting Gallery.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Blamcon Shooting Gallery.conf" SelfReg="false"/>
+    <ROW File="BlockKingBallShooter.conf" Component_="BangBangPewPew.conf" FileName="BLOCKK~1.CON|Block King Ball Shooter.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Block King Ball Shooter.conf" SelfReg="false"/>
+    <ROW File="blueestate.conf" Component_="BangBangPewPew.conf" FileName="BLUEES~1.CON|blue estate.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\blue estate.conf" SelfReg="false"/>
+    <ROW File="DeadContainment.conf" Component_="BangBangPewPew.conf" FileName="DEADCO~1.CON|Dead Containment.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Dead Containment.conf" SelfReg="false"/>
+    <ROW File="DeathLive.conf" Component_="BangBangPewPew.conf" FileName="DEATHL~1.CON|Death Live.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Death Live.conf" SelfReg="false"/>
+    <ROW File="EdHunter.conf" Component_="BangBangPewPew.conf" FileName="EDHUNT~1.CON|Ed Hunter.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Ed Hunter.conf" SelfReg="false"/>
+    <ROW File="Friction.conf" Component_="BangBangPewPew.conf" FileName="FRICTI~1.CON|Friction.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Friction.conf" SelfReg="false"/>
+    <ROW File="FruitNinjaHD.conf" Component_="BangBangPewPew.conf" FileName="FRUITN~1.CON|Fruit Ninja HD.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Fruit Ninja HD.conf" SelfReg="false"/>
+    <ROW File="HauntedMuseum2.conf" Component_="BangBangPewPew.conf" FileName="HAUNTE~1.CON|Haunted Museum 2.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Haunted Museum 2.conf" SelfReg="false"/>
+    <ROW File="HauntedMuseum.conf" Component_="BangBangPewPew.conf" FileName="HAUNTE~2.CON|Haunted Museum.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Haunted Museum.conf" SelfReg="false"/>
+    <ROW File="HeavyFireAfghanistan.conf" Component_="BangBangPewPew.conf" FileName="HEAVYF~1.CON|Heavy Fire Afghanistan.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Heavy Fire Afghanistan.conf" SelfReg="false"/>
+    <ROW File="HeavyFireShatteredSpear.conf" Component_="BangBangPewPew.conf" FileName="HEAVYF~2.CON|Heavy Fire Shattered Spear.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Heavy Fire Shattered Spear.conf" SelfReg="false"/>
+    <ROW File="HouseoftheDead3.conf" Component_="BangBangPewPew.conf" FileName="HOUSEO~1.CON|House of the Dead 3.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\House of the Dead 3.conf" SelfReg="false"/>
+    <ROW File="HouseOfTheDeadRemake.conf" Component_="BangBangPewPew.conf" FileName="HOUSEO~2.CON|House Of The Dead Remake.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\House Of The Dead Remake.conf" SelfReg="false"/>
+    <ROW File="Intake.conf" Component_="BangBangPewPew.conf" FileName="INTAKE~1.CON|Intake.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Intake.conf" SelfReg="false"/>
+    <ROW File="MadBullets.conf" Component_="BangBangPewPew.conf" FileName="MADBUL~1.CON|Mad Bullets.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Mad Bullets.conf" SelfReg="false"/>
+    <ROW File="MajorMayhem.conf" Component_="BangBangPewPew.conf" FileName="MAJORM~1.CON|Major Mayhem.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Major Mayhem.conf" SelfReg="false"/>
+    <ROW File="MissileCommandRecharged.conf" Component_="BangBangPewPew.conf" FileName="MISSIL~1.CON|Missile Command Recharged.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Missile Command Recharged.conf" SelfReg="false"/>
+    <ROW File="MobileSuitGundamSpiritsOfZeon.conf" Component_="BangBangPewPew.conf" FileName="MOBILE~1.CON|Mobile Suit Gundam Spirits Of Zeon.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Mobile Suit Gundam Spirits Of Zeon.conf" SelfReg="false"/>
+    <ROW File="MoorhuhnPirates.conf" Component_="BangBangPewPew.conf" FileName="MOORHU~1.CON|Moorhuhn Pirates.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Moorhuhn Pirates.conf" SelfReg="false"/>
+    <ROW File="MusicGunGun2.conf" Component_="BangBangPewPew.conf" FileName="MUSICG~1.CON|Music Gun Gun 2.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Music Gun Gun 2.conf" SelfReg="false"/>
+    <ROW File="NightHunter.conf" Component_="BangBangPewPew.conf" FileName="NIGHTH~1.CON|Night Hunter.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Night Hunter.conf" SelfReg="false"/>
+    <ROW File="OperationWolf.conf" Component_="BangBangPewPew.conf" FileName="OPERAT~1.CON|Operation Wolf.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Operation Wolf.conf" SelfReg="false"/>
+    <ROW File="PCGames.conf" Component_="BangBangPewPew.conf" FileName="PCGAME~1.CON|PC Games.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\PC Games.conf" SelfReg="false"/>
+    <ROW File="PixelCrisis.conf" Component_="BangBangPewPew.conf" FileName="PIXELC~1.CON|Pixel Crisis.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Pixel Crisis.conf" SelfReg="false"/>
+    <ROW File="PointBlankX.conf" Component_="BangBangPewPew.conf" FileName="POINTB~1.CON|Point Blank X.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Point Blank X.conf" SelfReg="false"/>
+    <ROW File="Prohibition1930.conf" Component_="BangBangPewPew.conf" FileName="PROHIB~1.CON|Prohibition 1930.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Prohibition 1930.conf" SelfReg="false"/>
+    <ROW File="RabbidsHollywood.conf" Component_="BangBangPewPew.conf" FileName="RABBID~1.CON|Rabbids Hollywood.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Rabbids Hollywood.conf" SelfReg="false"/>
+    <ROW File="Reload.conf" Component_="BangBangPewPew.conf" FileName="RELOAD~1.CON|Reload.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Reload.conf" SelfReg="false"/>
+    <ROW File="TransformersShadowsRising.conf" Component_="BangBangPewPew.conf" FileName="TRANSF~1.CON|Transformers Shadows Rising.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Transformers Shadows Rising.conf" SelfReg="false"/>
+    <ROW File="TypingoftheDeadOverkill.conf" Component_="BangBangPewPew.conf" FileName="TYPING~1.CON|Typing of the Dead Overkill.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Typing of the Dead Overkill.conf" SelfReg="false"/>
+    <ROW File="WildWestShootOut.conf" Component_="BangBangPewPew.conf" FileName="WILDWE~1.CON|Wild West ShootOut.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Wild West ShootOut.conf" SelfReg="false"/>
+    <ROW File="ZombiePanicinWonderlandDX.conf" Component_="BangBangPewPew.conf" FileName="ZOMBIE~1.CON|Zombie Panic in Wonderland DX.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\PC Games Lightgun\Zombie Panic in Wonderland DX.conf" SelfReg="false"/>
+    <ROW File="SegaCDLightgun.conf" Component_="SegaCDLightgun.conf" FileName="SEGACD~1.CON|Sega CD Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega CD Lightgun\Sega CD Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaDreamcastLightgun.conf" Component_="SegaDreamcastLightgun.conf" FileName="SEGADR~1.CON|Sega Dreamcast Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Dreamcast Lightgun\Sega Dreamcast Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaGenesisLightgun.conf" Component_="SegaGenesisLightgun.conf" FileName="SEGAGE~1.CON|Sega Genesis Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Genesis Lightgun\Sega Genesis Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaMasterSystemLightgun.conf" Component_="SegaMasterSystemLightgun.conf" FileName="SEGAMA~1.CON|Sega Master System Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Master System Lightgun\Sega Master System Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaModel2Lightgun.conf_2" Component_="SegaModel2Lightgun.conf" FileName="SEGAMO~1.CON|Sega Model 2 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Model 2 Lightgun\Sega Model 2 Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaModel3Lightgun.conf" Component_="SegaModel3Lightgun.conf" FileName="SEGAMO~1.CON|Sega Model 3 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Model 3 Lightgun\Sega Model 3 Lightgun.conf" SelfReg="false"/>
+    <ROW File="SegaModel3Lightgun.dat" Component_="SegaModel3Lightgun.conf" FileName="SEGAMO~1.DAT|Sega Model 3 Lightgun.dat" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Model 3 Lightgun\Sega Model 3 Lightgun.dat" SelfReg="false"/>
+    <ROW File="SegaNaomiLightgun.conf" Component_="SegaNaomiLightgun.conf" FileName="SEGANA~1.CON|Sega Naomi Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sega Naomi Lightgun\Sega Naomi Lightgun.conf" SelfReg="false"/>
+    <ROW File="SNESLightgun.conf" Component_="SNESLightgun.conf" FileName="SNESLI~1.CON|SNES Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\SNES Lightgun\SNES Lightgun.conf" SelfReg="false"/>
+    <ROW File="SonyPlaystation2Lightgun.conf" Component_="SonyPlaystation2Lightgun.conf" FileName="SONYPL~1.CON|Sony Playstation 2 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sony Playstation 2 Lightgun\Sony Playstation 2 Lightgun.conf" SelfReg="false"/>
+    <ROW File="SonyPlaystation3Lightgun.conf" Component_="SonyPlaystation3Lightgun.conf" FileName="SONYPL~1.CON|Sony Playstation 3 Lightgun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Sony Playstation 3 Lightgun\Sony Playstation 3 Lightgun.conf" SelfReg="false"/>
+    <ROW File="Spicy.conf" Component_="Spicy.conf" FileName="2SPICY~1.CON|2Spicy.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\2Spicy.conf" SelfReg="false"/>
+    <ROW File="AliensArmageddon.conf" Component_="Spicy.conf" FileName="ALIENS~1.CON|Aliens Armageddon.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Aliens Armageddon.conf" SelfReg="false"/>
+    <ROW File="AliensExtermination.conf" Component_="Spicy.conf" FileName="ALIENS~2.CON|Aliens Extermination.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Aliens Extermination.conf" SelfReg="false"/>
+    <ROW File="AmericasArmy.conf" Component_="Spicy.conf" FileName="AMERIC~1.CON|Americas Army.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Americas Army.conf" SelfReg="false"/>
+    <ROW File="BigBuckHunterPro.conf" Component_="Spicy.conf" FileName="BIGBUC~1.CON|Big Buck Hunter Pro.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Big Buck Hunter Pro.conf" SelfReg="false"/>
+    <ROW File="CastlevaniaTheArcade.conf" Component_="Spicy.conf" FileName="CASTLE~1.CON|Castlevania The Arcade.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Castlevania The Arcade.conf" SelfReg="false"/>
+    <ROW File="ElevatorActionDeathParade.conf" Component_="Spicy.conf" FileName="ELEVAT~1.CON|Elevator Action Death Parade.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Elevator Action Death Parade.conf" SelfReg="false"/>
+    <ROW File="ElevatorActionInvasion.conf" Component_="Spicy.conf" FileName="ELEVAT~2.CON|Elevator Action Invasion.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Elevator Action Invasion.conf" SelfReg="false"/>
+    <ROW File="FarcryParadiseLost.conf" Component_="Spicy.conf" FileName="FARCRY~1.CON|Farcry Paradise Lost.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Farcry Paradise Lost.conf" SelfReg="false"/>
+    <ROW File="FrictionArcade.conf" Component_="Spicy.conf" FileName="FRICTI~1.CON|Friction Arcade.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Friction Arcade.conf" SelfReg="false"/>
+    <ROW File="GaiaAttack4.conf" Component_="Spicy.conf" FileName="GAIAAT~1.CON|Gaia Attack 4.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Gaia Attack 4.conf" SelfReg="false"/>
+    <ROW File="Ghostbusters.conf" Component_="Spicy.conf" FileName="GHOSTB~1.CON|Ghostbusters.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Ghostbusters.conf" SelfReg="false"/>
+    <ROW File="HouseoftheDead4Special.conf" Component_="Spicy.conf" FileName="HOUSEO~1.CON|House of the Dead 4 Special.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\House of the Dead 4 Special.conf" SelfReg="false"/>
+    <ROW File="HouseoftheDead4.conf" Component_="Spicy.conf" FileName="HOUSEO~2.CON|House of the Dead 4.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\House of the Dead 4.conf" SelfReg="false"/>
+    <ROW File="HouseoftheDeadEx.conf" Component_="Spicy.conf" FileName="HOUSEO~3.CON|House of the Dead Ex.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\House of the Dead Ex.conf" SelfReg="false"/>
+    <ROW File="HouseoftheDeadScarletDawn.conf" Component_="Spicy.conf" FileName="HOUSEO~4.CON|House of the Dead Scarlet Dawn.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\House of the Dead Scarlet Dawn.conf" SelfReg="false"/>
+    <ROW File="Ikaruga.conf" Component_="Spicy.conf" FileName="IKARUG~1.CON|Ikaruga.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Ikaruga.conf" SelfReg="false"/>
+    <ROW File="JurassicPark.conf" Component_="Spicy.conf" FileName="JURASS~1.CON|Jurassic Park.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Jurassic Park.conf" SelfReg="false"/>
+    <ROW File="LetsGoIsland3D.conf" Component_="Spicy.conf" FileName="LET&apos;SG~1.CON|Let&apos;s Go Island 3D.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Let&apos;s Go Island 3D.conf" SelfReg="false"/>
+    <ROW File="LetsGoJungleLostontheIslandofSpice.conf" Component_="Spicy.conf" FileName="LET&apos;SG~2.CON|Let&apos;s Go Jungle! Lost on the Island of Spice.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Let&apos;s Go Jungle! Lost on the Island of Spice.conf" SelfReg="false"/>
+    <ROW File="LethalEnforcers3.conf" Component_="Spicy.conf" FileName="LETHAL~1.CON|Lethal Enforcers 3.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Lethal Enforcers 3.conf" SelfReg="false"/>
+    <ROW File="LostLandAdventure.conf" Component_="Spicy.conf" FileName="LOSTLA~1.CON|Lost Land Adventure.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Lost Land Adventure.conf" SelfReg="false"/>
+    <ROW File="LuigisMansionArcade.conf" Component_="Spicy.conf" FileName="LUIGI&apos;~1.CON|Luigi&apos;s Mansion Arcade.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Luigi&apos;s Mansion Arcade.conf" SelfReg="false"/>
+    <ROW File="OperationGHOST.conf" Component_="Spicy.conf" FileName="OPERAT~1.CON|Operation GHOST.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Operation GHOST.conf" SelfReg="false"/>
+    <ROW File="PoliceTrainer2.conf" Component_="Spicy.conf" FileName="POLICE~1.CON|Police Trainer 2.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Police Trainer 2.conf" SelfReg="false"/>
+    <ROW File="Primevil.conf" Component_="Spicy.conf" FileName="PRIMEV~1.CON|Primevil.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Primevil.conf" SelfReg="false"/>
+    <ROW File="Rambo.conf" Component_="Spicy.conf" FileName="RAMBO~1.CON|Rambo.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Rambo.conf" SelfReg="false"/>
+    <ROW File="SegaGoldenGun.conf" Component_="Spicy.conf" FileName="SEGAGO~1.CON|Sega Golden Gun.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Sega Golden Gun.conf" SelfReg="false"/>
+    <ROW File="SilentHillTheArcade.conf" Component_="Spicy.conf" FileName="SILENT~1.CON|Silent Hill The Arcade.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Silent Hill The Arcade.conf" SelfReg="false"/>
+    <ROW File="StarTrekVoyager.conf" Component_="Spicy.conf" FileName="STARTR~1.CON|Star Trek Voyager.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Star Trek Voyager.conf" SelfReg="false"/>
+    <ROW File="TargetTerror.conf" Component_="Spicy.conf" FileName="TARGET~1.CON|Target Terror.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Target Terror.conf" SelfReg="false"/>
+    <ROW File="Teknoparrot.conf" Component_="Spicy.conf" FileName="TEKNOP~1.CON|Teknoparrot.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Teknoparrot.conf" SelfReg="false"/>
+    <ROW File="TerminatorSalvation.conf" Component_="Spicy.conf" FileName="TERMIN~1.CON|Terminator Salvation.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Terminator Salvation.conf" SelfReg="false"/>
+    <ROW File="TimeCrisis5.conf" Component_="Spicy.conf" FileName="TIMECR~1.CON|Time Crisis 5.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Time Crisis 5.conf" SelfReg="false"/>
+    <ROW File="TombRaider.conf" Component_="Spicy.conf" FileName="TOMBRA~1.CON|Tomb Raider.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Tomb Raider.conf" SelfReg="false"/>
+    <ROW File="TransformersHumanAlliance.conf" Component_="Spicy.conf" FileName="TRANSF~1.CON|Transformers - Human Alliance.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Transformers - Human Alliance.conf" SelfReg="false"/>
+    <ROW File="WalkingDead.conf" Component_="Spicy.conf" FileName="WALKIN~1.CON|Walking Dead.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Walking Dead.conf" SelfReg="false"/>
+    <ROW File="WartranTroopers.conf" Component_="Spicy.conf" FileName="WARTRA~1.CON|Wartran Troopers.conf" Attributes="0" SourcePath="..\Menu\bin\profiles\Teknoparrot Lightgun\Wartran Troopers.conf" SelfReg="false"/>
     <ROW File="rclone.exe" Component_="rclone.exe" FileName="rclone.exe" Attributes="0" SourcePath="..\Menu\bin\rclone.exe" SelfReg="false" DigSign="true"/>
     <ROW File="SDL2.dll" Component_="SDL2.dll" FileName="SDL2.dll" Attributes="0" SourcePath="..\Menu\bin\SDL2.dll" SelfReg="false"/>
-    <ROW File="style.css" Component_="cacert.pem.txt" FileName="style.css" Attributes="0" SourcePath="..\Menu\bin\style.css" SelfReg="false"/>
+    <ROW File="style.css" Component_="cacert.pem.txt_1" FileName="style.css" Attributes="0" SourcePath="..\Menu\bin\style.css" SelfReg="false"/>
     <ROW File="zlib1.dll" Component_="zlib1.dll" FileName="zlib1.dll" Attributes="0" SourcePath="..\Menu\bin\zlib1.dll" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
@@ -258,7 +453,8 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
     <ROW Feature_="MainFeature" Component_="ProductInformation"/>
-    <ROW Feature_="MainFeature" Component_="cacert.pem.txt"/>
+    <ROW Feature_="MainFeature" Component_="ActionMaxLightgun.png"/>
+    <ROW Feature_="MainFeature" Component_="AMERICANLASERGAMES.png"/>
     <ROW Feature_="MainFeature" Component_="IntegrumRetroUpdater.exe"/>
     <ROW Feature_="MainFeature" Component_="IntegrumRetroUpdaterInstaller.exe"/>
     <ROW Feature_="MainFeature" Component_="libbrotlicommon.dll"/>
@@ -266,8 +462,8 @@
     <ROW Feature_="MainFeature" Component_="libbz21.dll"/>
     <ROW Feature_="MainFeature" Component_="libcairo2.dll"/>
     <ROW Feature_="MainFeature" Component_="libcairogobject2.dll"/>
-    <ROW Feature_="MainFeature" Component_="libcairomm1.161.dll"/>
     <ROW Feature_="MainFeature" Component_="libcairoscriptinterpreter2.dll"/>
+    <ROW Feature_="MainFeature" Component_="libcairomm1.161.dll"/>
     <ROW Feature_="MainFeature" Component_="libcrypto3x64.dll"/>
     <ROW Feature_="MainFeature" Component_="libcurl4.dll"/>
     <ROW Feature_="MainFeature" Component_="libdatrie1.dll"/>
@@ -320,9 +516,31 @@
     <ROW Feature_="MainFeature" Component_="libwebp7.dll"/>
     <ROW Feature_="MainFeature" Component_="libwinpthread1.dll"/>
     <ROW Feature_="MainFeature" Component_="libzstd.dll"/>
+    <ROW Feature_="MainFeature" Component_="AmericanLaserGames.conf"/>
+    <ROW Feature_="MainFeature" Component_="AtomiswaveLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="LaunchboxDataFiles.conf"/>
+    <ROW Feature_="MainFeature" Component_="CXBXLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="MAMELightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="MicrosoftXboxLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="Namco357.conf"/>
+    <ROW Feature_="MainFeature" Component_="NintendoEntertainmentSystemLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="NintendoWiiLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="BangBangPewPew.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaCDLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaDreamcastLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaGenesisLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaMasterSystemLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaModel2Lightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaModel3Lightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SegaNaomiLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SNESLightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SonyPlaystation2Lightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="SonyPlaystation3Lightgun.conf"/>
+    <ROW Feature_="MainFeature" Component_="Spicy.conf"/>
     <ROW Feature_="MainFeature" Component_="rclone.exe"/>
     <ROW Feature_="MainFeature" Component_="SDL2.dll"/>
     <ROW Feature_="MainFeature" Component_="zlib1.dll"/>
+    <ROW Feature_="MainFeature" Component_="cacert.pem.txt_1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="favicon.exe" SourcePath="..\Menu\favicon.ico" Index="0"/>
